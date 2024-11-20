@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.10-1054
+FROM registry.access.redhat.com/ubi8/ubi:8.10-1132.1731461736
 
 RUN dnf -y module enable nginx:1.20
 RUN dnf -y -q --setopt=tsflags=nodocs --setopt=skip_missing_names_on_install=False install nginx
